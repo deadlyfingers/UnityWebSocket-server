@@ -7,14 +7,22 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "echo server",
-      "program": "${workspaceFolder}/server-echo.js"
+      "name": "start echo server",
+      "program": "${workspaceFolder}/app.js",
+      "env": {
+        "PORT": "8080",
+        "SCRIPT": "echo"
+      }
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "json server",
-      "program": "${workspaceFolder}/server-json.js"
-    }
+      "name": "start json server",
+      "program": "${workspaceFolder}/app.js",
+      "env": {
+        "PORT": "8080",
+        "SCRIPT": "json"
+      }
+    },
   ]
 }
