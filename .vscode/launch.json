@@ -24,5 +24,15 @@
         "SCRIPT": "json"
       }
     },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "start bingspeech sample message server",
+      "program": "${workspaceFolder}/app.js",
+      "env": {
+        "PORT": "8080",
+        "SCRIPT": "bingspeech"
+      }
+    }
   ]
 }
