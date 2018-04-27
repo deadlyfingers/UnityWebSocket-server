@@ -36,17 +36,18 @@ wss.on("connection", function (ws) {
 
 // return sample JSON data
 function sampleJson() {
-  var x, y, z;
+  var x, y, z, w;
   // position
   x = randomNo(2);
   y = randomNo(2);
   z = randomNo(6, 4);
   var position = { x, y, z };
   // rotation
-  x = randomNo(360);
-  y = randomNo(360);
-  z = randomNo(360);
-  var rotation = { x, y, z };
+  x = randomFloat(0, 1);
+  y = randomFloat(0, 1);
+  z = randomFloat(0, 1);
+  w = randomFloat(0, 1);
+  var rotation = { x, y, z, w };
   // scale
   x = y = z = randomFloat(1.5, 0.5);
   var scale = { x, y, z };
